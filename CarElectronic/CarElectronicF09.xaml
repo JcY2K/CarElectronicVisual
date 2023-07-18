@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<popup:PopupPage 
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:popup="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.PopUp"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    
+    x:Class="CarElectronic.CarElectronicF09">
+    
+        <StackLayout x:Name="mainLayout">
+            <Label Text="Welcome to Xamarin.Forms!"/>
+            <ListView x:Name="chkLstOpt" ItemSelected="chkLstOpt_ItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <CheckBox IsChecked="{Binding IsChecked}" />
+                                <Label Text="{Binding Text}" />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        <Button x:Name="btnExisteDef" Text="Guardar" Clicked="btnExisteDef_Clicked"></Button>
+        </StackLayout>
+    
+</popup:PopupPage>

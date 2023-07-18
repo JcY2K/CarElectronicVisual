@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CarElectronic.CarElectronicF07">
+    <ContentPage.Content>
+        <StackLayout  x:Name="mainLayout">
+            <Label Text="Cabecera de Ordenes" FontSize="26" HorizontalTextAlignment="Center"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>                    
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <!--<Label Text="Codigo Orden" FontSize="18" Grid.Row="1" Grid.Column="0"/>-->
+                <Label Text="Cliente" FontSize="18" Grid.Row="0" Grid.Column="0"/>
+                <Label Text="Id Vehiculo" FontSize="18" Grid.Row="1" Grid.Column="0"/>     
+                <Label Text="Fecha" FontSize="18" Grid.Row="2" Grid.Column="0"/>
+                <Label Text="Hora Inicio" FontSize="18" Grid.Row="3" Grid.Column="0"/>
+                <Label Text="Kilometraje" FontSize="18" Grid.Row="4" Grid.Column="0"/>
+                <Label Text="Porcent. Comb" FontSize="18" Grid.Row="5" Grid.Column="0"/>
+                <Label Text="Tipo Servicio" FontSize="18" Grid.Row="6" Grid.Column="0"/>
+                <Label Text="Observación" FontSize="18" Grid.Row="7" Grid.Column="0"/>
+                <Label Text="Recomendación" FontSize="18" Grid.Row="8" Grid.Column="0"/>
+                <Label Text="Celular Tercero" FontSize="18" Grid.Row="9" Grid.Column="0"/>
+
+
+                <Picker x:Name="pckClientes" Grid.Row="0" Grid.Column="1" SelectedIndexChanged="pckClientes_SelectedIndexChanged"></Picker>
+                <Picker x:Name="pckVehiculos" Grid.Row="1" Grid.Column="1" SelectedIndexChanged="pckVehiculos_SelectedIndexChanged"></Picker>
+                <DatePicker  Grid.Row="2" Grid.Column="1" x:Name="FecIngreso" Format="dd/MM/yyyy"/>
+                <Entry Grid.Row="3" Grid.Column="1" x:Name="txtHora" Placeholder="Ingrese la Hora de ingreso"/>
+                <Entry Grid.Row="4" Grid.Column="1" x:Name="txtKilometraje" Placeholder="Ingrese el Km" Keyboard="Numeric"/>
+                <Entry Grid.Row="5" Grid.Column="1" x:Name="txtPorcentajeComb" Placeholder="Ingrese % Combustible" Keyboard="Numeric"/>
+                <Picker x:Name="pckTipoServicio" Grid.Row="6" Grid.Column="1" SelectedIndexChanged="pckTipoServicio_SelectedIndexChanged" ></Picker>
+                <Entry Grid.Row="7" Grid.Column="1" x:Name="txtObservacion" Placeholder="Ingrese observacion"/>
+                <Entry Grid.Row="8" Grid.Column="1" x:Name="txtRecomendacion" Placeholder="Ingerese recomendacion"/>
+                <Entry Grid.Row="9" Grid.Column="1" x:Name="txtCelular" Placeholder="Ingerese el año" Keyboard="Numeric"/>
+            </Grid>
+
+            <Button x:Name="btnIngresar" Text="Ingresar" Clicked="btnIngresar_Clicked"/>
+            
+
+            <Grid x:Name="grdExis_Nov">
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Button Grid.Row="0" Grid.Column="0" x:Name="btnQTiene" Text="Existe" Clicked="btnQTiene_Clicked"></Button>
+                <Button Grid.Row="0" Grid.Column="1" x:Name="btnNovCarr" Text="Nov Carr" Clicked="btnNovCarr_Clicked"></Button>
+            </Grid>
+            <Button x:Name="btnDetOrd" Text="Detalle Orden" Clicked="btnDetOrd_Clicked"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CarElectronic.CarElectronicF02" NavigationPage.HasNavigationBar="False">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="lblXplEstilo" TargetType="Label">
+                <Setter Property="FontSize" Value="24"/>
+                <Setter Property="TextColor" Value="Blue"/>
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+            </Style>
+            
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout Style="{StaticResource stackLayoutEstl}">
+            <Label x:Name="lblUsuario" Style="{StaticResource lblEstlusuario}"></Label>
+            <Label x:Name="lblFechaApp" Style="{StaticResource lblEstlFechaHora}"></Label>
+
+            <Label Text="ORDENES" Style="{StaticResource lblXplEstilo}"/>
+            <BoxView Color="Gray" HeightRequest="3" HorizontalOptions="FillAndExpand" />
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="70"></RowDefinition>
+                    <RowDefinition Height="5"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.9*"></ColumnDefinition>
+                    <ColumnDefinition Width="0.5*"></ColumnDefinition>
+                    <!--<ColumnDefinition Width="0.5*"></ColumnDefinition>-->
+                </Grid.ColumnDefinitions>
+                <!--<Button Grid.Row="0" Grid.Column="1" x:Name="btnNuevaOrd"  Clicked="btnNuevaOrd_Clicked" ImageSource="NOrden.png" Style="{StaticResource btnEstl}"></Button>-->
+                <Button Grid.Row="0" Grid.Column="0" x:Name="btnMntoCliente" Text="Cliente" Clicked="btnMntoCliente_Clicked"></Button>
+                <Button Grid.Row="0" Grid.Column="2" x:Name="btnMtoVehi" Text="Vehículo" Clicked="btnMtoVehi_Clicked"></Button>
+                
+            </Grid>
+            <BoxView Color="Gray" HeightRequest="3" HorizontalOptions="FillAndExpand" />
+
+            <Button x:Name="btnMntoOrd" Text="Mantenimiento Ordenes" Clicked="btnMntoOrd_Clicked"></Button>
+            <BoxView Color="Gray" HeightRequest="3" HorizontalOptions="FillAndExpand" />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

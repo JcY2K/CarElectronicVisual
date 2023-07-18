@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CarElectronic.CarElectronicF05">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Clientes" FontSize="26" HorizontalTextAlignment="Center"/>
+            <Grid Margin="3,3,2,3">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                
+                <Label Text="Tipo Id" FontSize="18" Grid.Row="1" Grid.Column="0"/>
+                <Label Text="Identificación" FontSize="18" Grid.Row="2" Grid.Column="0"/>
+                <Label Text="Primer nombre" FontSize="18" Grid.Row="3" Grid.Column="0"/>
+                <Label Text="Segundo nombre" FontSize="18" Grid.Row="4" Grid.Column="0"/>
+                <Label Text="Primer apellido" FontSize="18" Grid.Row="5" Grid.Column="0"/>
+                <Label Text="Segundo apellido" FontSize="18" Grid.Row="6" Grid.Column="0"/>
+                <Label Text="Nombre corto" FontSize="18" Grid.Row="7" Grid.Column="0"/>
+                <Label Text="Correo" FontSize="18" Grid.Row="8" Grid.Column="0"/>
+                <Label Text="Celular" FontSize="18" Grid.Row="9" Grid.Column="0"/>
+                <Label Text="Convencional" FontSize="18" Grid.Row="10" Grid.Column="0"/>
+                <Label Text="Fec. nacimiento" FontSize="18" Grid.Row="11" Grid.Column="0"/>
+
+                <!-- <Entry Grid.Row="1" Grid.Column="1" x:Name="txtTipoCl" Placeholder="Ingrese Tipo Identificacion"></Entry>-->
+
+                <Picker x:Name="pckTipoId" Grid.Row="1" Grid.Column="1" SelectedIndexChanged="pckTipoId_SelectedIndexChanged"></Picker>
+                
+                
+                <Entry Grid.Row="2" Grid.Column="1" x:Name="txtIdentificacion" Placeholder="Ingrese Identificacion"></Entry>
+                <Entry Grid.Row="3" Grid.Column="1" x:Name="txtPrimNombre" Placeholder="Ingrese Primer Nombre" TextChanged="txtPrimNombre_TextChanged"></Entry>
+                <Entry Grid.Row="4" Grid.Column="1" x:Name="txtSegNombre" Placeholder="Ingrese Segundo Nombre"></Entry>
+                <Entry Grid.Row="5" Grid.Column="1" x:Name="txtPrimApellido" Placeholder="Ingrese Primer Apellido" TextChanged="txtPrimApellido_TextChanged"></Entry>
+                <Entry Grid.Row="6" Grid.Column="1" x:Name="txtSegApellido" Placeholder="Ingrese Segundo Apellido"></Entry>
+                <Entry Grid.Row="7" Grid.Column="1" x:Name="txtNomCorto" IsEnabled="False"></Entry>
+                <Entry Grid.Row="8" Grid.Column="1" x:Name="txtCorreo" Placeholder="Ingrese correo"></Entry>
+                <Entry Grid.Row="9" Grid.Column="1" x:Name="txtCelular" Placeholder="Ingrese tlf. Celular" Keyboard="Numeric" ></Entry>
+                <Entry Grid.Row="10" Grid.Column="1" x:Name="txtConvencional" Placeholder="Ingrese tlf. fijo" Keyboard="Numeric"></Entry>
+                <DatePicker  Grid.Row="11" Grid.Column="1" x:Name="dtpFecNac" Format="dd/MM/yyyy"></DatePicker>
+
+            </Grid>
+            <Button x:Name="btnIngresar" Text="Ingresar" Clicked="btnIngresar_Clicked"></Button>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

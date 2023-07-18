@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CarElectronic.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <Style x:Key="stackLayoutEstl" TargetType="StackLayout">
+                <Setter Property="Orientation" Value="Vertical"/>
+                <Setter Property="BackgroundColor" Value="#FFFFFAF0"/>
+                <Setter Property="Padding" Value="30,50,10,10"/>
+                <Setter Property="WidthRequest" Value="150"/>
+            </Style>
+            <Style x:Key="lblEstlTitulo" TargetType="Label">
+                <Setter Property="FontSize" Value="Title"></Setter>
+                <Setter Property="TextColor" Value="#FFF08080"></Setter>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="HorizontalTextAlignment" Value="Center"></Setter>
+            </Style>
+            <Style x:Key="lblEstlSubTit" TargetType="Label">
+                <Setter Property="FontSize" Value="15"></Setter>
+                <Setter Property="TextColor" Value="#FFF08080"></Setter>
+                <Setter Property="HorizontalTextAlignment" Value="Center"></Setter>
+            </Style>
+            <Style x:Key="lblEstlFechaHora" TargetType="Label">
+                <Setter Property="TextColor" Value="#FF9ACD32"/>
+                <Setter Property="HorizontalTextAlignment" Value="End"/>
+                <Setter Property="FontSize" Value="13"/> 
+            </Style>
+            <Style x:Key="lblEstlusuario" TargetType="Label">
+                <Setter Property="TextColor" Value="#FF9ACD32"/>
+                <Setter Property="HorizontalTextAlignment" Value="End"/>
+                <Setter Property="FontSize" Value="14"/>
+            </Style>
+            <Style x:Key="btnEstl" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="#00FFFFFF"/>
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

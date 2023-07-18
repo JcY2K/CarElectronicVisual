@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CarElectronic.CarElectronicF06">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Vehiculos" FontSize="26" HorizontalTextAlignment="Center" />
+            <Grid Margin="3,3,2,3">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                
+                <Label Text="Cod idCliente" FontSize="18" Grid.Row="1" Grid.Column="0"/>
+                <Label Text="Cod Marca" FontSize="18" Grid.Row="2" Grid.Column="0"/>
+                <Label Text="Cod Modelo" FontSize="18" Grid.Row="3" Grid.Column="0"/>
+                <Label Text="Año de fabrica" FontSize="18" Grid.Row="4" Grid.Column="0"/>
+                <Label Text="Pais origen" FontSize="18" Grid.Row="5" Grid.Column="0"/>
+                <Label Text="Cilindraje" FontSize="18" Grid.Row="6" Grid.Column="0"/>
+                <Label Text="Color" FontSize="18" Grid.Row="7" Grid.Column="0"/>
+                <Label Text="Cod tipo combustible" FontSize="18" Grid.Row="8" Grid.Column="0"/>
+                <Label Text="Sn Asegurado" FontSize="18" Grid.Row="9" Grid.Column="0"/>
+                <Label Text="Fecha compra" FontSize="18" Grid.Row="10" Grid.Column="0"/>
+                <Label Text="Placa" FontSize="18" Grid.Row="11" Grid.Column="0"/>
+
+
+                <Picker x:Name="pckClientes" Grid.Row="1" Grid.Column="1" SelectedIndexChanged="pckClientes_SelectedIndexChanged"></Picker>
+                <Picker x:Name="pckMarcas" Grid.Row="2" Grid.Column="1" SelectedIndexChanged="pckMarcas_SelectedIndexChanged"></Picker>
+                <Picker x:Name="pckModelo" Grid.Row="3" Grid.Column="1" SelectedIndexChanged="pckModelo_SelectedIndexChanged"></Picker>
+                
+                <Entry Grid.Row="4" Grid.Column="1" x:Name="txtAñoFabrica" Placeholder="Ingrese el año de fabrica"></Entry>
+                <Entry Grid.Row="5" Grid.Column="1" x:Name="txtPaisOrigen" Placeholder="Ingrese el pais de origen"></Entry>
+                <Entry Grid.Row="6" Grid.Column="1" x:Name="txtCilindraje" Placeholder="Ingrese el cilindraje"></Entry>
+                <Entry Grid.Row="7" Grid.Column="1" x:Name="txtColor" Placeholder="Ingrese el color"></Entry>
+
+                <Picker x:Name="pckTipCombustible" Grid.Row="8" Grid.Column="1" SelectedIndexChanged="pckTipCombustible_SelectedIndexChanged"></Picker>
+                <Entry Grid.Row="9" Grid.Column="1" x:Name="txtSnAsegurado" Placeholder="Ingrese el seguro"></Entry>
+                <DatePicker  Grid.Row="10" Grid.Column="1" x:Name="FecCompra" Format="dd/MM/yyyy"></DatePicker>
+                <Entry Grid.Row="11" Grid.Column="1" x:Name="txtPlaca" Placeholder="Ingrese numero de placa"></Entry>
+            </Grid>
+            <Button x:Name="btnIngresar" Text="Ingresar" Clicked="btnIngresar_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

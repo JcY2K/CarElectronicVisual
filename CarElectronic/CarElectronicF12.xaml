@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CarElectronic.CarElectronicF12">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Insertar Detalle  Orden" FontSize="20" HorizontalTextAlignment="Center" />
+
+            <Picker x:Name="pckTipoServicio" SelectedIndexChanged="pckTipoServicio_SelectedIndexChanged"/>
+            <Picker x:Name="pckServicio" SelectedIndexChanged="pckServicio_SelectedIndexChanged"/>
+            
+            <Entry x:Name="txtPrecio" IsEnabled="False"></Entry>
+            <Entry x:Name="txtCantidad" Placeholder="Ingrese Cantidad" ></Entry>
+            <Entry x:Name="txtComentario" Placeholder="Ingrese Comentario" ></Entry>
+            
+            <Entry x:Name="txtDirDetOrd" Placeholder="Ingrese direccion Tercero"></Entry>
+            <Entry x:Name="txtLatitud" Placeholder="Ingrese Latitud"></Entry>
+            <Entry x:Name="txtLonguitud" Placeholder="Ingrese Longuitud"></Entry>
+            
+            <Button x:Name="btnIngresar" Text="Ingresar" Clicked="btnIngresar_Clicked"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
