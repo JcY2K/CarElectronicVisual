@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="CarElectronic.CarElectronicF02" NavigationPage.HasNavigationBar="False">
+             x:Class="CarElectronic.CarElectronicF02" NavigationPage.HasNavigationBar="False"> <!--se oculto esta parte-->
 
     <ContentPage.Resources>
         <ResourceDictionary>
@@ -19,12 +19,12 @@
             <Label x:Name="lblFechaApp" Style="{StaticResource lblEstlFechaHora}"></Label>
 
             <Label Text="ORDENES" Style="{StaticResource lblXplEstilo}"/>
-            <BoxView Color="Gray" HeightRequest="3" HorizontalOptions="FillAndExpand" />
+            <BoxView Color="Gray" HeightRequest="3" HorizontalOptions="FillAndExpand" /> <!--se añadio las separaciones--> 
 
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="70"></RowDefinition>
-                    <RowDefinition Height="5"></RowDefinition>
+                    <RowDefinition Height="5"></RowDefinition> <!--se modifico-->
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="0.9*"></ColumnDefinition>
@@ -34,12 +34,14 @@
                 <!--<Button Grid.Row="0" Grid.Column="1" x:Name="btnNuevaOrd"  Clicked="btnNuevaOrd_Clicked" ImageSource="NOrden.png" Style="{StaticResource btnEstl}"></Button>-->
                 <Button Grid.Row="0" Grid.Column="0" x:Name="btnMntoCliente" Text="Cliente" Clicked="btnMntoCliente_Clicked"></Button>
                 <Button Grid.Row="0" Grid.Column="2" x:Name="btnMtoVehi" Text="Vehículo" Clicked="btnMtoVehi_Clicked"></Button>
-                
+                <!--se modifico estos botones para colocarlos como solicitaron-->
             </Grid>
             <BoxView Color="Gray" HeightRequest="3" HorizontalOptions="FillAndExpand" />
+            <!--se añadio las separaciones-->
 
-            <Button x:Name="btnMntoOrd" Text="Mantenimiento Ordenes" Clicked="btnMntoOrd_Clicked"></Button>
+            <Button x:Name="btnMntoOrd" Text="Mantenimiento Ordenes" Clicked="btnMntoOrd_Clicked"></Button> <!--se saco el boton del grid-->
             <BoxView Color="Gray" HeightRequest="3" HorizontalOptions="FillAndExpand" />
+            <!--se añadio las separaciones-->
 
         </StackLayout>
     </ContentPage.Content>

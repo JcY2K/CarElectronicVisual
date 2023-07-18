@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="CarElectronic.CarElectronicF01" NavigationPage.HasNavigationBar="False">
+             x:Class="CarElectronic.CarElectronicF01" NavigationPage.HasNavigationBar="False"> <!--se aumento esto par aocultar la linea azul-->
     <ContentPage.Content>
         <StackLayout Style="{StaticResource stackLayoutEstl}">
             <Label x:Name="lblFechaApp" Style="{StaticResource lblEstlFechaHora}"></Label>
@@ -9,9 +9,9 @@
                 <Label Text="CAR ELECTRONIC" Style="{StaticResource lblEstlTitulo}"/>
             </Frame>-->
             <Frame>
-                <Label Text="BIENVENIDOS" Style="{StaticResource lblEstlSubTit}" />
+                <Label Text="BIENVENIDOS" Style="{StaticResource lblEstlSubTit}" /> 
             </Frame>
-            <Image Source="LOGO01.png" WidthRequest="75" HeightRequest="75" Aspect="AspectFit" />
+            <Image Source="LOGO01.png" WidthRequest="75" HeightRequest="75" Aspect="AspectFit" />  <!--se agrego esta imagen-->
             
             <Grid Margin="20,30,30,20">
                 <Grid.RowDefinitions>

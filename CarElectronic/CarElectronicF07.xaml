@@ -41,7 +41,7 @@
                 <DatePicker  Grid.Row="2" Grid.Column="1" x:Name="FecIngreso" Format="dd/MM/yyyy"/>
                 <Entry Grid.Row="3" Grid.Column="1" x:Name="txtHora" Placeholder="Ingrese la Hora de ingreso"/>
                 <Entry Grid.Row="4" Grid.Column="1" x:Name="txtKilometraje" Placeholder="Ingrese el Km" Keyboard="Numeric"/>
-                <Entry Grid.Row="5" Grid.Column="1" x:Name="txtPorcentajeComb" Placeholder="Ingrese % Combustible" Keyboard="Numeric"/>
+                <Entry Grid.Row="5" Grid.Column="1" x:Name="txtPorcentajeComb" Placeholder="Ingrese % Combustible" Keyboard="Numeric"/> <!--SE  COLOCO SOLO NUMEROS-->
                 <Picker x:Name="pckTipoServicio" Grid.Row="6" Grid.Column="1" SelectedIndexChanged="pckTipoServicio_SelectedIndexChanged" ></Picker>
                 <Entry Grid.Row="7" Grid.Column="1" x:Name="txtObservacion" Placeholder="Ingrese observacion"/>
                 <Entry Grid.Row="8" Grid.Column="1" x:Name="txtRecomendacion" Placeholder="Ingerese recomendacion"/>

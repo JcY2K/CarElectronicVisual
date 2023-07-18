@@ -10,7 +10,7 @@
     </ContentPage.Resources>
     <ContentPage.Content>        
         <StackLayout>
-            <Label Text="Detalle de la Orden" TextColor="Blue" FontSize="20"/>
+            <Label Text="Detalle de la Orden" TextColor="Blue" FontSize="20"/> <!--MODIFIQUE ESTO-->
 
             <Grid>
                 <Grid.RowDefinitions>
@@ -25,7 +25,7 @@
                     <ColumnDefinition ></ColumnDefinition>
                     <ColumnDefinition ></ColumnDefinition>
                 </Grid.ColumnDefinitions>
-                
+                <!--MODIFIQUE TODO EL GRID-->
                 <Label Grid.Row="0"  Grid.Column="0" Text="Id Det.Orden" FontSize="12" TextColor="Blue" ></Label>
                  <Label Grid.Row="1"  Grid.Column="0" Text="Id Servicio" FontSize="16" TextColor="Blue" ></Label>
                 <Label Grid.Row="2"  Grid.Column="0" Text="Id Orden" FontSize="16" TextColor="Blue" ></Label>
@@ -57,6 +57,7 @@
                                         <ColumnDefinition></ColumnDefinition>
                                         <ColumnDefinition></ColumnDefinition>
                                     </Grid.ColumnDefinitions>
+                                    <!--MODIFIQUE TODO EL GRID-->
                                     <Label x:Name="lblIdDetOrd" Text="{Binding IDDETORDEN}" Grid.Row="0" Grid.Column="1"></Label>
                                     <Label x:Name="lblIdSrv" Text="{Binding IDSERVICIO}" Grid.Row="1" Grid.Column="1"></Label>
                                     <Label x:Name="lblIdOrd" Text="{Binding IDORDEN}" Grid.Row="2" Grid.Column="1"></Label>
